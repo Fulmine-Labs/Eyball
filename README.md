@@ -1,7 +1,7 @@
 # Eyball
 Anomaly detection engine
 
-Implement a class to detect anomalies, using an AI model in images based which call be called from visual checking automation.
+Implement a class to detect image anomalies using an AI model, which can be called from visual checking automation.
 
 ![Eyball](eyball3.png "Eyball")
 

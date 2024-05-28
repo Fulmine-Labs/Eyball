@@ -83,7 +83,7 @@ The next step is to use Eyball in real-world tests, by running it against the OH
 ## Known issues
 
 * Some cleanup of the logging is required
-* Error handling is currently very rudimenatary
+* Error handling is currently rudimentary
 * The OpenAI model name should also be a variable
 
 ## Acknowledgements

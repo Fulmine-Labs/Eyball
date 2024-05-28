@@ -65,8 +65,16 @@ Evaluation Results - Siamese Model: {'accuracy': 0.975, 'precision': 0.975, 'rec
 Compared with gpt-4-turbo:
 Evaluation Results - GPT Model: {'accuracy': 0.875, 'precision': 0.9166666666666666, 'recall': 0.825, 'f1': 0.868421052631579}
 
-Generally, the GPT model struggles a bit with unusual image aquisition features such as parts of the scanner that were included in the image and tends to classify these as anomalous. Conversely, artefacts which could be post processing artefacts were classed more often as Normal by the GPT model, despite a clear prompt:
-_If the image is obviously not a medical image, state *** ANOMALOUS ***. If it is a typical medical image as acquired by an imaging modality with no additions or enhancements, state *** NORMAL ***. Otherwise, if it is a medical image but it also clearly has textual overlays or annotations or digital or image processing artifacts that could have been added by the PACS image viewer technology, describe those features and append *** ANOMALOUS ***._
+Generally, the GPT model struggles a bit with unusual image aquisition features such as parts of the scanner that were included in the image and tends to classify these as anomalous. Conversely, artefacts which could be post processing artefacts were classed more often as Normal by the GPT model. 
+For reference, this was the prompt:
+
+_If the image is obviously not a medical image, state *** ANOMALOUS ***._
+
+_If it is a typical medical image as acquired by an imaging modality with no additions or enhancements, state *** NORMAL ***._
+
+_Otherwise, if it is a medical image but it also clearly has textual overlays or annotations or digital or image processing artifacts that could have been added by the PACS image viewer technology, describe those features and append *** ANOMALOUS ***._
+
+Empirically, the order of these clauses within the prompt can make a significant difference to the outcome, so perhaps additional prompt engineering would help.
 
 Conclusion: While the OpenAI model is currently not as performant as the custom model and there is a small cost, it takes no additional effort to train and it is expected that future LLM models will have improved performance. 
 

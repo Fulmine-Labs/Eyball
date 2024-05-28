@@ -1,5 +1,4 @@
-# Eyball
-Anomaly detection engine
+# Eyball anomaly detection engine
 
 Implement a class to detect image anomalies using an AI model, which can be called from visual checking automation.
 

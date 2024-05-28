@@ -21,8 +21,9 @@ For comparison purposes, Eyball also has the capability of describing the images
 
 ## Datasources used
 
-Cancer Imaging Archive images, stored in Orthanc
-CT images randomly selected from internet sources for testing
+Cancer Imaging Archive images, stored in Orthanc.
+
+CT Lung images randomly selected from internet sources for testing
 
 ## Current Version
 The current stable version of the project is 0.1
@@ -89,6 +90,8 @@ The next step is to use Eyball in real-world tests, by running it against the OH
 ## Acknowledgements
 
 This code was written collaboratively with [GPT-4V](https://chat.openai.com/). Thank you Assistant!
+The Cancer Imaging Archive
+Orthanc
 
 ## License
 MIT open source license

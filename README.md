@@ -26,7 +26,7 @@ CT Lung images randomly selected from internet sources for testing
 
 ## Current Version
 The current stable version of the project is 0.1
-See the [CHANGELOG.md](CHANGELOG.md) file for details about this version.
+See the [Changelog.md](Changelog.md) file for details about this version.
 
 ## Prerequisites
 
